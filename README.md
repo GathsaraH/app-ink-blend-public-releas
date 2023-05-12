@@ -76,11 +76,11 @@ You can pass components to change things:
 ```js
 import React from 'react'
 import ReactDOM from 'react-dom'
-import ReactMarkdown from 'react-markdown'
+import ReactMarkdown from 'ink-blend'
 import MyFancyRule from './components/my-fancy-rule.js'
 
 ReactDOM.render(
-  <ReactMarkdown
+  <InkBlend
     components={{
       // Use h2s instead of h1s
       h1: 'h2',
@@ -89,7 +89,7 @@ ReactDOM.render(
     }}
   >
     # Your markdown here
-  </ReactMarkdown>,
+  </InkBlend>,
   document.querySelector('#content')
 )
 ```
